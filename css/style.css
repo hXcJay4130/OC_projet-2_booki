@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0;
+    margin-bottom: 0;
     background-color: var(--main-bg-color);
 }
 
@@ -282,21 +283,24 @@ nav a:hover {
 .activites {
     padding-top: 30px;
 }
+.activites-section {
+    padding: 30px 0;
+}
 .activites-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.activites-section {
-    padding: 30px 0;
-}
 .card-activity {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    /* width: 20%; */
     margin-top: 33px;
     border-radius: 20px;
     box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.1);
+}
+.activites-cards a {
+    width: 22.5%;
 }
 .card-activity img {
     /* width: fit-content; */
@@ -342,9 +346,13 @@ footer h3 {
 
 /****** Media queries ***********/
 /* Large desktop */
-@media (max-width: 1440px) {
-    .main-container {
-        max-width: 1900px;
+@media (min-width: 1440px) {
+    /* .main-container {
+        max-width: 1440px;
+    } */
+    body {
+        width: 1440px;
+        /* background-color: white; */
     }
 }
 
